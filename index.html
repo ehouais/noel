@@ -1,1 +1,16 @@
-Test
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color:#a03030;color:white">
+        <script>
+            const [from, to] = atob(window.location.hash)
+            const node = document.querySelector("#label")
+            node.innerText = `Bonjour ${from} !<br>Ta mission:<br>offrir un cadeau à ${to}`
+        </script>
+        <div id="label" style="height:226px;margin-top:-113px;position:absolute;top:50%;text-align:center;width:100%;font-family:'Berkshire Swash',serif;font-weight:400;font-style:normal;font-size:60px"></div>
+    </body>
+</html>
