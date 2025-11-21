@@ -10,7 +10,7 @@
         <script>
             const [from, to] = atob(window.location.hash.slice(1)).split(' > ')
             const node = document.querySelector("#label")
-            node.innerText = `Bonjour ${from} !<br>Ta mission:<br>offrir un cadeau à ${to}`
+            node.innerHTML = `Bonjour ${from} !<br/>Ta mission:<br/>offrir un cadeau à ${to}`
         </script>
     </body>
 </html>
